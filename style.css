@@ -53,13 +53,12 @@
 }
 .desktop-logo {
   display: block;
-  /* position: absolute; */
 }
 .logo {
   object-fit: contain;
 }
 .title {
-  margin: 3.5rem 0 0 0;
+  margin: 5.5rem 0 0 0;
   font-size: 3rem;
   font-weight: 300;
   letter-spacing: 0.2rem;
@@ -88,13 +87,14 @@ form {
 .input--container {
   width: 65%;
   min-width: 400px;
+  flex: 1;
 }
-.email {
+.email-input{
   border-radius: 50px;
   background: transparent;
   padding: 0 2rem;
   margin-left: 0.5rem;
-  outline: none;
+  outline:none;
   width: 70%;
   height: 50px;
   border: 1px solid var(--Desaturated-Red);
@@ -107,15 +107,19 @@ form {
   border-radius: 50%;
   top: 19px;
   right: 63%;
-  transition: 0.5s;
+  transition: 0.8s;
   opacity: 0;
+}
+.error-active{
+  border-color: red;
+  border-width: 2px;
 }
 .error--text {
   color: var(--Desaturated-Red);
   font-size: 0.8rem;
   font-size: 600;
   padding: 0.8rem 2rem;
-  transition: 0.5s;
+  transition: 0.8s;
   opacity: 0;
 }
 button {
@@ -144,9 +148,13 @@ button:active {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   .hero-desktop {
     min-height: 480px;
+  }
+  .error-img {
+    top: 19px;
+    right: 40%;
   }
 }
 
@@ -199,7 +207,66 @@ button:active {
   }
   .error-img {
     top: 13px;
-    right: 34%;
+    right: 36%;
+  }
+  .error--text {
+    text-align: center;
+  }
+  button {
+    position: absolute;
+    height: 60%;
+    right: 0%;
+    transform: translate(-55%);
+  }
+
+}
+@media screen and (max-width: 400px){
+  .container {
+    height: initial;
+    flex-direction: column;
+    width: 126%;
+  }
+  .logo-container {
+    display: block;
+  }
+  .desktop-logo {
+    display: none;
+  }
+  .logo {
+    padding: 2rem;
+  }
+  .hero-desktop {
+    display: none;
+  }
+  .hero-mobile {
+    display: block;
+  }
+  .title {
+    margin: 1.5rem 0 0 0;
+    text-align: center;
+    font-size: 2.5rem;
+    text-align: center;
+    width: 100%;
+  }
+  .comming--soon {
+    font-size: 2.5rem;
+    text-align: center;
+    width: 100%;
+  }
+  p {
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+  }
+  .input--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .error-img {
+    top: 13px;
+    right: 30%;
   }
   .error--text {
     text-align: center;
@@ -208,7 +275,7 @@ button:active {
     position: absolute;
     height: 60%;
     right: 0;
-    transform: translate(-55%);
+    transform: translate(-25%);
   }
-
+  
 }
