@@ -30,6 +30,7 @@
   justify-content: center;
   height: 100vh;
   width: 100%;
+  position: relative;
 }
 .img--container {
   display: flex;
@@ -53,18 +54,21 @@
 }
 .desktop-logo {
   display: block;
+  position: absolute;
+  top: 8%;
 }
 .logo {
   object-fit: contain;
 }
 .title {
-  margin: 5.5rem 0 0 0;
+  margin: 4.5rem 0 0 0;
   font-size: 3rem;
   font-weight: 300;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   line-height: 1.2em;
   color: var(--Desaturated-Red);
+  letter-spacing: 8px;
 }
 .comming--soon {
   line-height: 1.2em;
@@ -73,20 +77,21 @@
   font-weight: 600;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
+  letter-spacing: 10px;
 }
 p {
   width: 60%;
   font-size: 1em;
   margin: 2rem 0 2rem 0;
   color: var(--Desaturated-Red);
+  line-height: 1.8;
 }
 form {
   width: 100%;
   position: relative;
 }
 .input--container {
-  width: 65%;
-  min-width: 400px;
+  width: 75%;
   flex: 1;
 }
 .email-input{
@@ -106,7 +111,7 @@ form {
   height: 25px;
   border-radius: 50%;
   top: 19px;
-  right: 63%;
+  right: 54%;
   transition: 0.8s;
   opacity: 0;
 }
@@ -165,7 +170,7 @@ button:active {
     width: 100%;
   }
   .wrapper {
-    padding: 0;
+    padding:0;
   }
   .logo-container {
     display: block;
